@@ -49,7 +49,7 @@ namespace TryScanMe.Functions
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = client.PostAsync(
-                    "https://hooks.slack.com/services/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", content).Result;
+                    "https://hooks.slack.com/services/T7D2KASHZ/BJJGNSVSA/{{webhook-key}}", content).Result;
             }
 
             return new HttpResponseMessage(HttpStatusCode.OK);

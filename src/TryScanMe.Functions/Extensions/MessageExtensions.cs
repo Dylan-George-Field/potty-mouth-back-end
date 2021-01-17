@@ -21,7 +21,7 @@ namespace TryScanMe.Functions
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = client.PostAsync(
-                    "https://hooks.slack.com/services/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", content).Result;
+                    "https://hooks.slack.com/services/T7D2KASHZ/BHSRM56CW/{{webhook-key}}", content).Result;
             }
         }
     }
